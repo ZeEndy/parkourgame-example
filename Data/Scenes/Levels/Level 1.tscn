@@ -1,13 +1,13 @@
-[gd_scene load_steps=7 format=3 uid="uid://bsp60orkec78a"]
+[gd_scene load_steps=7 format=3 uid="uid://de3tu4mkrmcfn"]
 
-[ext_resource type="PackedScene" uid="uid://bc8t1ayts3mbs" path="res://Data/Scenes/Player/Player.tscn" id="1_qgyxb"]
-[ext_resource type="Texture2D" uid="uid://b7s6swyfk4hbk" path="res://Data/Sprites/Rooftop_Tiles.png" id="2_ahn4t"]
-[ext_resource type="PackedScene" uid="uid://cutgxq6scg4h7" path="res://Data/Scenes/Door/Door.tscn" id="3_uxoyb"]
+[ext_resource type="PackedScene" uid="uid://bc8t1ayts3mbs" path="res://Data/Scenes/Player/Player.tscn" id="1_fnbh6"]
+[ext_resource type="Texture2D" uid="uid://b7s6swyfk4hbk" path="res://Data/Sprites/Rooftop_Tiles.png" id="2_2al3r"]
+[ext_resource type="PackedScene" uid="uid://cutgxq6scg4h7" path="res://Data/Scenes/Door/Door.tscn" id="3_rqq8f"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pcvoo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pfbgl"]
-texture = ExtResource("2_ahn4t")
+texture = ExtResource("2_2al3r")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -125,7 +125,7 @@ position = Vector2(556, 297)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_pcvoo")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_qgyxb")]
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_fnbh6")]
 position = Vector2(580, 140)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -134,12 +134,12 @@ format = 2
 layer_0/z_index = -3
 layer_0/tile_data = PackedInt32Array(851992, 3, 0, 851993, 65539, 0, 851994, 65539, 0, 851995, 65539, 0, 851996, 65539, 0, 851997, 65539, 0, 851998, 65539, 0, 851999, 65539, 0, 852000, 65539, 0, 852001, 65539, 0, 852002, 65539, 0, 852003, 65539, 0, 852004, 65539, 0, 852005, 65539, 0, 852006, 65539, 0, 852007, 65539, 0, 852008, 65539, 0, 852009, 65539, 0, 852010, 65539, 0, 852011, 65539, 0, 852012, 65539, 0, 852013, 65539, 0, 852014, 65539, 0, 852015, 327683, 0, 720936, 458755, 5, 786472, 458755, 6, 720937, 524291, 5, 786473, 524291, 6, 720938, 589827, 5, 786474, 589827, 6, 720939, 458755, 5, 786475, 458755, 6, 720940, 458755, 5, 786476, 458755, 6, 720941, 524291, 5, 786477, 524291, 6, 720942, 589827, 5, 786478, 589827, 6, 720943, 655363, 5, 786479, 655363, 6, 589868, 458755, 6, 655404, 655363, 6, 589869, 524291, 6, 655405, 655363, 6, 589870, 589827, 6, 655406, 589827, 6, 589871, 655363, 6, 655407, 655363, 6, 589866, 589827, 6, 655402, 589827, 6, 589867, 458755, 6, 655403, 655363, 6, 589865, 524291, 6, 655401, 524291, 6, 589864, 458755, 6, 655400, 458755, 6, 524328, 458755, 5, 524329, 524291, 5, 524330, 589827, 5, 524331, 458755, 5, 524332, 458755, 5, 524333, 524291, 5, 524334, 589827, 5, 524335, 655363, 5, 393260, 655363, 5, 458796, 655363, 6, 393261, 524291, 5, 458797, 524291, 6, 393262, 589827, 5, 458798, 589827, 6, 393263, 655363, 5, 458799, 655363, 6, 393257, 524291, 5, 458793, 524291, 6, 393258, 589827, 5, 458794, 589827, 6, 393259, 655363, 5, 458795, 655363, 6, 393256, 458755, 5, 458792, 458755, 6, 327719, 393219, 4, 327720, 458755, 4, 327721, 524291, 4, 327722, 589827, 4, 327723, 524291, 4, 327724, 458755, 4, 327725, 524291, 4, 327726, 589827, 4, 327727, 655363, 4, 327728, 720899, 4, 393255, 393219, 5, 458791, 393219, 5, 524327, 393219, 5, 589863, 393219, 5, 655399, 393219, 5, 720935, 393219, 5, 786471, 393219, 5, 786480, 720899, 5, 720944, 720899, 5, 655408, 720899, 5, 589872, 720899, 5, 524336, 720899, 5, 458800, 720899, 5, 393264, 720899, 5, 852016, 720899, 5)
 
-[node name="Area2D" parent="." instance=ExtResource("3_uxoyb")]
+[node name="Area2D" parent="." instance=ExtResource("3_rqq8f")]
 position = Vector2(663, 208)
 
 [node name="Label" type="Label" parent="."]
-offset_left = 440.0
-offset_top = 76.0
-offset_right = 499.0
-offset_bottom = 99.0
-text = "MAIN SCENE"
+offset_left = 533.0
+offset_top = 144.0
+offset_right = 592.0
+offset_bottom = 167.0
+text = "LEVEL 1"

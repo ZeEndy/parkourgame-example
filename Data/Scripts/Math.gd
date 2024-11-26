@@ -1,14 +1,6 @@
 extends Node
 class_name Math
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
 static func ExpDecay(a,b,decay,dt):
 	if typeof(a)==TYPE_BASIS:
